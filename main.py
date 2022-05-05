@@ -26,6 +26,9 @@ history_urls = {1: "https://classroom.google.com/u/3/c/NDMyMTgwMjU5Nzk3",
                 3: "https://drive.google.com/drive/u/3/my-drive"}
 
 #Technic
+technic_urls = {
+
+}
 
 
 def clicked(icon, item):
