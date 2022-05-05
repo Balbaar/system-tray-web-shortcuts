@@ -31,24 +31,33 @@ history_urls = {1: "https://classroom.google.com/u/3/c/NDMyMTgwMjU5Nzk3",
 def clicked(icon, item):
     if str(item) == "Matte":
         for page in math_urls:
-            webbrowser.get(google_location).open(math_urls[page])
+            print(f"Trying {math_urls[page]}")
+            try:
+                webbrowser.get(google_location).open(math_urls[page])
+                print(f"Successful {math_urls[page]}")
+
+            except:
+                print(f"Failed {math_urls[page]}")
 
     elif str(item) == "Fysik":
         for page in physics_urls:
             webbrowser.get(google_location).open(physics_urls[page])
+            print(f"Successful {math_urls[page]}")
 
     elif str(item) == "Svenska":
         for page in swedish_urls:
             webbrowser.get(google_location).open(swedish_urls[page])
+            print(f"Successful {math_urls[page]}")
 
     elif str(item) == "Engelska":
         for page in english_urls:
             webbrowser.get(google_location).open(english_urls[page])
+            print(f"Successful {math_urls[page]}")
 
     elif str(item) == "Historia":
         for page in history_urls:
-            print(page)
             webbrowser.get(google_location).open(history_urls[page])
+            print(f"Successful {math_urls[page]}")
 
     elif str(item) == "Stäng":
         icon.stop()
